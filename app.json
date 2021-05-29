@@ -15,6 +15,11 @@
             "description": "The URL where this service should redirect users to.",
             "value": "https://example.com",
             "required": true
+        },
+        "HTTP_STATUS":{
+            "description": "This is the HTTP status to use. For example, use `301` for permanent or `302` for temporary redirect.",
+            "value": "301",
+            "required": false
         }
     }
 }
