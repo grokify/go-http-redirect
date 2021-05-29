@@ -5,7 +5,11 @@
 [![License][license-svg]][license-url]
 [![Heroku][heroku-svg]][heroku-url]
 
-This is a simple HTTP redirect service which can be run as a stand-alone service. It can be optionally run on Heroku.
+This is a simple HTTP redirect service which can be run as a stand-alone service. It can be optionally run on Heroku which is the initial use case.
+
+Heroku provides easy hosting with default hostnames at https://{projectName}.herokuapp.com. This project provides an easy way to deploy a project to Heroku to redirect traffice to another URL.
+
+No code modifications are necessary. URL and HTTP status are both set via environment variables.
 
 ## Configuration
 
