@@ -38,6 +38,6 @@ Heroku support provided via [`github.com/grokify/goheroku`](https://github.com/g
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/go-http-redirect
  [docs-godoc-url]: https://pkg.go.dev/github.com/grokify/go-http-redirect
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/grokify/go-http-redirect/blob/master/LICENSE.md
+ [license-url]: https://github.com/grokify/go-http-redirect/blob/master/LICENSE
  [heroku-svg]: https://img.shields.io/badge/%E2%86%91_deploy-Heroku-7056bf.svg?style=flat
  [heroku-url]: https://heroku.com/deploy
