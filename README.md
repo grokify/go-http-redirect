@@ -11,8 +11,8 @@ This is a simple HTTP redirect service which can be run as a stand-alone service
 
 Set the following Environment Variables:
 
-1. `PORT`: port number which the service should run on, e.g. `8080`.
 1. `REDIRECT_URL`: URL where the requestor should be redirected.
+1. `PORT`: port number which the service should run on, e.g. `8080`. Note: Heroku will automatically set this environment variable.
 
 ## Installation
 
