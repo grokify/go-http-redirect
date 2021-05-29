@@ -1,13 +1,20 @@
 {
-    "name": "HTTP Redirector",
-    "description": "",
-    "keywords": [],
-    "website": "",
+    "name": "Go HTTP Redirect",
+    "description": "A HTTP redirector website for Golang",
+    "keywords": ["http", "redirect"],
+    "website": "https://github.com/grokify/go-http-redirect",
     "repository": "https://github.com/grokify/go-http-redirect",
     "formation": {
         "web": {
             "quantity": 1,
             "size": "Free"
+        }
+    },
+    "env": {
+        "REDIRECT_URL":{
+            "description": "The URL where this service should redirect users to.",
+            "value": "https://example.com",
+            "required": true
         }
     }
 }
