@@ -1,0 +1,13 @@
+{
+    "name": "HTTP Redirector",
+    "description": "",
+    "keywords": [],
+    "website": "",
+    "repository": "https://github.com/grokify/go-http-redirect",
+    "formation": {
+        "web": {
+            "quantity": 1,
+            "size": "Free"
+        }
+    }
+}
