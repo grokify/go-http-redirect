@@ -1,4 +1,4 @@
 module github.com/grokify/go-http-redirect
 
-// +heroku goVersion go1.16
-go 1.16
+// +heroku goVersion go1.22
+go 1.22
