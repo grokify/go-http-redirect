@@ -1,6 +1,7 @@
 # Go HTTP Redirect
 
 [![Build Status][build-status-svg]][build-status-url]
+[![Lint Status][lint-status-svg]][lint-status-url]
 [![Go Report Card][goreport-svg]][goreport-url]
 [![License][license-svg]][license-url]
 [![Heroku][heroku-svg]][heroku-url]
