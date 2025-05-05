@@ -36,8 +36,10 @@ or
 
 Heroku support provided via [`github.com/grokify/goheroku`](https://github.com/grokify/goheroku).
 
- [build-status-svg]: https://github.com/grokify/go-http-redirect/workflows/test/badge.svg
- [build-status-url]: https://github.com/grokify/go-http-redirect/actions
+ [build-status-svg]: https://github.com/grokify/go-http-redirect/actions/workflows/ci.yaml/badge.svg?branch=master
+ [build-status-url]: https://github.com/grokify/go-http-redirect/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/grokify/go-http-redirect/actions/workflows/lint.yaml/badge.svg?branch=master
+ [lint-status-url]: https://github.com/grokify/go-http-redirect/actions/workflows/lint.yaml
  [goreport-svg]: https://goreportcard.com/badge/github.com/grokify/go-http-redirect
  [goreport-url]: https://goreportcard.com/report/github.com/grokify/go-http-redirect
  [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/grokify/go-http-redirect
