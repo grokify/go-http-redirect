@@ -6,6 +6,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 )
 
 func parseRedirectStatus(status string, defaultStatus int) int {
@@ -31,10 +32,29 @@ func parseRedirectStatus(status string, defaultStatus int) int {
 }
 
 func main() {
-	http.Handle("/", http.RedirectHandler(
+	port := strings.TrimSpace(os.Getenv("PORT"))
+	if port == "" {
+		port = "8080"
+	}
+
+	mux := http.NewServeMux()
+	mux.Handle("/", http.RedirectHandler(
 		os.Getenv("REDIRECT_URL"),
 		parseRedirectStatus(os.Getenv("HTTP_STATUS"), 302)))
-	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+
+	timeout := time.Second
+
+	svr := &http.Server{
+		Addr:              ":" + port,
+		Handler:           mux,
+		IdleTimeout:       timeout,
+		ReadHeaderTimeout: timeout,
+		ReadTimeout:       timeout,
+		WriteTimeout:      timeout,
+		MaxHeaderBytes:    1 << 20,
+	}
+
+	err := svr.ListenAndServe()
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
 	}
